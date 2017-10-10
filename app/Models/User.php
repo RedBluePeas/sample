@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -9,6 +9,8 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    /* 在用户模型中，我们对应要交互的数据库表为users */
+    protected $table = 'users';
     /**
      * The attributes that are mass assignable.
      *
@@ -26,4 +28,5 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
 }
