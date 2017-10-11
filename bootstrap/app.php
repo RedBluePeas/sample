@@ -1,7 +1,7 @@
 <?php
 
 /* 定义了helpers.php对不同的环境下使用的数据库进行选择，对helpers.php进行配置，自动加载该文件 */
-require __DIR__.'/helpers.php'
+require __DIR__.'/helpers.php';
 /*
 |--------------------------------------------------------------------------
 | Create The Application
